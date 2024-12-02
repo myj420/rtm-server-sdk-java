@@ -59,6 +59,9 @@ public class FileAPIFunctions {
 
         String cp = "/com/example/testFile.txt";
         String filePath = FileAPIFunctions.class.getResource(cp).getFile();
+        filePath = filePath.substring(1);
+        System.out.println(filePath);
+//        String filePath = ClassLoader.getSystemClassLoader().getResource("per/ying/dm/XXX.class").getPath();
 
         // sync api
         try{
