@@ -65,7 +65,7 @@ public interface GroupAPI extends APIBase {
     }
 
     default void delGroupMembers(long groupId, Set<Long> uids, DoneLambdaCallback callback) {
-        addGroupMembers(groupId, uids, callback, 0);
+        delGroupMembers(groupId, uids, callback, 0);
     }
 
     default void delGroupMembers(long groupId, Set<Long> uids, DoneLambdaCallback callback, int timeoutInseconds){
